@@ -14,7 +14,7 @@ export const CHAR_FAILURE = "CHAR_FAILER";
 export const getChars = () => dispatch => {
     dispatch({ type: GET_CHARS });
     axios
-        .get("http://swapi.co/api/people")
+        .get("https://swapi.co/api/people/")
         .then(({ data }) => {
             dispatch({
                 type: CHAR_SUCCESS,
